@@ -1,0 +1,36 @@
+body{
+	background-color: #DCDCDC;
+	background-repeat: no-repeat;
+	min-height: 100px;
+	height: 95.5vh;
+	background-position: center center;
+	background-size: cover;
+
+}
+
+h1{
+	font-size: 45px;
+	font-family: "Times New Roman";
+	color: #DC3D24;
+	text-align: center;
+	font-weight:bold;
+}
+table{
+	width: 600px;
+	height: 400px;
+	padding-top: 60px;
+}
+td{
+	font-size: 30px;
+	font-family: "Times New Roman";
+	color: #DC3D24;
+	text-align: center;
+	font-weight:bold;
+}
+p{
+	 font-size: 30px;
+	font-family: "Times New Roman";
+	color: #DC3D24;
+	text-align: center;
+	font-weight:bold;
+}
