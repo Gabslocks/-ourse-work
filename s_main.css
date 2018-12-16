@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {
+    font-family:  Arial, Verdana, sans-serif;    
+    background-color: #BDBDBD;
+}
+#header{ 
+    background-color: #BDBDBD;
+}
+#header h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+	text-align: center;
+    padding: 30px 30px 30px 10px;
+    clear: both;
+	color: #424242;
+}
+#header h2 {
+    font-size: 14px;
+    font-weight: bold;
+	text-align: right;
+    padding: 10px;
+    clear: both;
+	color: #424242;
+}
+
+/* задаем цвет фона для контейнера nav. */
+			nav {
+			    margin: 10px 0;
+			    background-color: #faa51a;
+				text-align: center;
+			}
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    background-color: #faa51a;
+			    }
+			
+			/* стилизуем ссылки */
+			nav a {
+			    display:block;
+			    padding:0 10px;
+			    color:#FFF;
+			    font-size:20px;
+			    line-height: 60px;
+			    text-decoration:none;
+			}
+			
+			/* изменяем цвет фона при наведении курсора */
+			nav a:hover {
+			    background-color: #000;
+		}
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+			nav ul ul {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+			}
+			
+			/* отображаем выпадающий список при наведении */
+			nav ul li:hover > ul {
+			    display:inherit;
+			}
+			
+			/* первый уровень выпадающего списка */
+			nav ul ul li {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}		
+
+.wrapper{
+    background-color: #f7f7f7;
+	min-height:170px;
+}
+.aside h2 {
+    font-size: 0.95em;
+    margin-top: 15px;
+}
+.aside h3 {
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+.aside p, .aside li {
+    font-size: .75em;
+    margin-top: 10px;   
+}
+.aside li{ 
+    list-style-type: none;
+}
+#sidebar1 {
+    float: right;
+    width: 20%; 
+    padding: 0 20px 0 10px;
+}
+#article{
+    
+    padding: 10px;
+	text-align: center;
+	min-height:170px;
+    
+}
+#article table{
+	width: 700px;
+	min-height: 50px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	border-collapse: collapse; 	
+}
+#article th{
+	border: 1px solid black; /* Параметры рамки */
+	padding: 5px;
+	text-align: center;
+	margin: 0 auto; 
+}
+#article td{
+	border: 1px solid black; /* Параметры рамки */
+	padding: 5px;
+	text-align: center;
+	margin: 0 auto; 
+}
+#article select{
+	min-width: 500px;
+}
+#article tr:nth-child(odd){
+	 background-color: #BDBDBD;
+}
+#article tr:nth-child(even){
+	 background-color: ##EEEEEE;
+}
+#article:after{
+    clear:both;
+    display:table;
+    content:'';
+}
+#article h2{
+    font-size: 1.5em;
+    margin-bottom:15px;
+}
+#article p{
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+#footer{ 
+    border-top: 1px solid #ccc;
+    font-size: .8em;    
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+}
+#header h1, .wrapper, #footer p {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.wrapper, #header, #footer{
+    min-width: 768px;
+}
